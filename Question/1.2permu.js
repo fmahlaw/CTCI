@@ -1,4 +1,4 @@
-let a = "aab";
+let a = "aba";
 let b = "baa";
 
 // function sortPermu(a, b) {
@@ -16,9 +16,10 @@ function isPermu(a, b) {
   if (a.length + b.length === 0 || a.length !== b.length) return false;
 
   for (let i = 0; i < a.length; i++) {
-    obj[a[i]] ??= 0;
-    obj[a[i]] += 1;
+    obj[a[i]] ? obj[a[i]] += 1:obj[a[i]] = 1 ;
   }
+
+  console.log(obj)
 
   for (let i = 0; i < b.length; i++) {
     if (!obj[b[i]]) return false;

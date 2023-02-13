@@ -1,5 +1,6 @@
 // //Method to converted space into "%20", remove space in front and in the back of the input
 // //Big O time is 2n= n, space Big o(1)
+// can be optimize to be pure O n with code from urlify-3.js
 
 // function urlfy(str, trueLength) {
 //   let firstChar = 0;
